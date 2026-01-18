@@ -61,15 +61,13 @@ export default function Index() {
       <header className="border-b-4 border-secondary bg-card sticky top-0 z-50 shadow-lg">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-3xl vinyl-spin">
-                💿
-              </div>
-              <div>
-                <h1 className="text-4xl text-secondary font-heading">Vinyl Vault</h1>
-                <p className="text-xs text-muted-foreground">Est. 1975</p>
-              </div>
-            </div>
+            <button onClick={() => setCurrentSection("home")} className="flex items-center gap-3 transition-opacity hover:opacity-80">
+              <img 
+                src="https://cdn.poehali.dev/files/logoza.ru.png" 
+                alt="Vinyl Vault Logo" 
+                className="h-12 w-auto"
+              />
+            </button>
             
             <nav className="hidden md:flex gap-6">
               {["Главная", "Каталог", "О нас", "Доставка", "Контакты"].map((item) => (
@@ -306,10 +304,11 @@ export default function Index() {
       <footer className="bg-secondary text-white py-12 mt-24">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-2xl">
-              💿
-            </div>
-            <h3 className="text-3xl font-heading">Vinyl Vault</h3>
+            <img 
+              src="https://cdn.poehali.dev/files/logoza.ru.png" 
+              alt="Vinyl Vault Logo" 
+              className="h-10 w-auto brightness-0 invert"
+            />
           </div>
           <p className="text-white/70">© 1975-2026 Vinyl Vault. Все права защищены.</p>
         </div>
