@@ -65,7 +65,7 @@ export default function Index() {
               <img 
                 src="https://cdn.poehali.dev/files/logoza.ru.png" 
                 alt="Vinyl Vault Logo" 
-                className="h-12 w-auto"
+                className="h-16 md:h-20 w-auto"
               />
             </button>
             
@@ -307,7 +307,7 @@ export default function Index() {
             <img 
               src="https://cdn.poehali.dev/files/logoza.ru.png" 
               alt="Vinyl Vault Logo" 
-              className="h-10 w-auto brightness-0 invert"
+              className="h-14 w-auto brightness-0 invert"
             />
           </div>
           <p className="text-white/70">© 1975-2026 Vinyl Vault. Все права защищены.</p>
